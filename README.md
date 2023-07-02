@@ -44,15 +44,15 @@ store_root_dir/
     .gpg-id               # with key IDs of Alice and Bob
     alice/
         .gpg-id           # only key ID of Alice
-        matrix.gpg        # ecrypted for Alice
-        server1.gpg       # ecrypted for Alice
-        server2.gpg       # ecrypted for Alice
+        matrix.gpg        # encrypted for Alice
+        server1.gpg       # encrypted for Alice
+        server2.gpg       # encrypted for Alice
     bob/
         .gpg-id           # only key ID of Bob
-        mastodon.gpg      # ecrypted for Bob
-        matrix.gpg        # ecrypted for Bob
+        mastodon.gpg      # encrypted for Bob
+        matrix.gpg        # encrypted for Bob
     seafile/
-        team_library.gpg  # ecrypted for Alice and Bob
+        team_library.gpg  # encrypted for Alice and Bob
 ```
 
 In this example, the `team_library.gpg` was encrypted for both Alice and Bob because the `seafile` directory doesn't
