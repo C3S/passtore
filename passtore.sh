@@ -16,7 +16,7 @@
 # along with passtore.sh.  If not, see <http://www.gnu.org/licenses/>.
 
 [[ "$1" =~ ^(--version)$ ]] && { 
-    echo "2023-07-02";
+    echo "2023-07-28";
     exit 0
 };
 
@@ -240,7 +240,7 @@ if [[ "$1" =~ ^(-h|--help)$ || "$1" == "" ]] ; then
                                     "- only files with .gpg extension are supported"
                                 )
     $(usage opt "-M" "<store>"  "same as $(_opt "-m") but expecting identical file structure in writable and read-only store")
-    $(usage opt "-n" "<name>"   "generate a new password file named $(_arg "<name>") in the read-write store set by $(_opt "-s")")
+    $(usage opt "-n" "<name>"   "generate a new password file named $(_arg "<name>") in the read-only store set by $(_opt "-s")")
                                 $(usage info \
                                     "- implies $(_opt "-i")"
                                 )
